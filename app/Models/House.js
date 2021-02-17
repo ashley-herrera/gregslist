@@ -1,6 +1,5 @@
 import {generateId} from "../Utils/GenerateId.js"
 
-
 export default class House{
     constructor({homeType, beds, bathrooms, sqft, price, imgUrl}){
       this.homeType = homeType
