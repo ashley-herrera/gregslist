@@ -35,4 +35,14 @@ createHouse(event){
     console.log(rawHouse)
     houseService.createHouse(rawHouse)
   }
+  bid(id){
+    console.log('bidding ' + id)
+    carsService.bid(id)
+  }
+
+  deleteCar(id){
+    console.log(id)
+    carsService.deleteCar(id)
+  }
+
 }
