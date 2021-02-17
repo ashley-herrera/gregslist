@@ -23,6 +23,7 @@ export default class CarsController{
     console.log('creating car')
     let form = event.target
     console.log(form)
+    
     let rawCar = {
       make: form.make.value,
       model: form.model.value,

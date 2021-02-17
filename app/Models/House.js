@@ -13,13 +13,13 @@ export default class House{
 
     get Template(){
         return /*html*/`<div class="card col-2">
-        <i class="fa fa-trash fa-2x text-danger d-flex align-self-end pointer" onclick="app.carsController.deleteCar('${this.id}')" aria-hidden="true"></i>
+        <i class="fa fa-trash fa-2x text-danger d-flex align-self-end pointer" onclick="app.housesController.deleteHouse('${this.id}')" aria-hidden="true"></i>
         <img class="card-img-top" src="${this.imgUrl}" alt="">
         <div class="card-body">
             <h4 class="card-title">${this.homeType} ${this.beds} - ${this.bathrooms}</h4>
             <p>Sq.Ft : ${this.sqft}</p>
             <p>Price: ${this.price}</p>
-            <button class="btn btn-success" onclick="app.carsController.bid('${this.id}')">Bid</button>
+            <button class="btn btn-success" onclick="app.housesController.bid('${this.id}')">Bid</button>
         </div>
       </div>`
     }

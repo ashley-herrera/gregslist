@@ -18,7 +18,7 @@ export default class HouseController{
         ProxyState.on("houses", _draw)
     }
 
-createHouse(event){
+    createHouse(event){
     event.preventDefault();
     console.log('creating house')
     let form = event.target
@@ -37,12 +37,12 @@ createHouse(event){
   }
   bid(id){
     console.log('bidding ' + id)
-    carsService.bid(id)
+    houseService.bid(id)
   }
 
   deleteCar(id){
     console.log(id)
-    carsService.deleteCar(id)
+    houseService.deleteCar(id)
   }
 
 }
