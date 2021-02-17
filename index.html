@@ -21,6 +21,11 @@
             </a>
         </nav>
     </header>
+
+
+
+
+
     <main class="container-fluid">
         <div class="row">
             <div class="col">
@@ -59,15 +64,54 @@
             </div>
         </div>
         <div class="row" id="cars">
-
+            <!-- cards appear here -->
         </div>
         <hr>
         <div class="row">
             <div class="col">
+
+
                 <h1>Houses</h1>
+                <form class="form-inline" onsubmit="(event)">
+                    <div class="form-group">
+                        <input type="text" name="bed" id="bed" class="form-control" placeholder="Beds"
+                            aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="bathroom" id="bathroom" class="form-control" placeholder="Bathroom"
+                            aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" name="sqft" id="sqft" class="form-control" placeholder="SqFt"
+                            aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" name="price" id="price" class="form-control" placeholder="Price"
+                            aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="imgUrl" id="imgUrl" class="form-control" placeholder="ImgUrl"
+                            aria-describedby="helpId">
+                    </div>
+                    <button class="btn btn-info" type="submit">Create</button>
+                </form>
             </div>
         </div>
+        <div class="row" id="houses">
+            <!-- cards appear here -->
+        </div>
+
+        <hr>
+
+
+
+
     </main>
+
+
+
+
+
     <footer class="container-fluid bg-dark text-light">
         <div class="row text-center">
             <div class="col">
@@ -76,6 +120,9 @@
         </div>
     </footer>
 
+
+
+    
     <script src="app/main.js" type="module"></script>
 </body>
 
