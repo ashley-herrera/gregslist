@@ -41,7 +41,7 @@ export default class HouseController{
     houseService.bid(id)
   }
 
-  deleteCar(id){
+  deleteHouse(id){
     console.log(id)
     houseService.deleteCar(id)
   }
