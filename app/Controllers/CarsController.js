@@ -27,7 +27,7 @@ export default class CarsController{
     let rawCar = {
       make: form.make.value,
       model: form.model.value,
-      year: form.year.value,
+      year: parseFloat(form.year.value),
       price: parseFloat(form.price.value),
       description: form.description.value,
       imgUrl: form.imgUrl.value,
