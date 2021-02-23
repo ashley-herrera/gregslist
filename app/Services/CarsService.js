@@ -32,6 +32,7 @@ async createCar(rawCar){
     car.price += 100
     try{
       const res = await api.post('cars/' + id, car)
+      console.log(res.data)
       ProxyState.cars = ProxyState.cars
     } catch (error) {
       console.error(error)

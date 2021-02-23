@@ -1,7 +1,6 @@
-import {generateId} from "../Utils/GenerateId.js"
 
 export default class Car{
-constructor({make, model, year, price, description, imgUrl, miles}){
+constructor({make, model, year, price, description, imgUrl, miles, _id, id}){
   this.make = make
   this.model = model
   this.year = year
@@ -9,7 +8,7 @@ constructor({make, model, year, price, description, imgUrl, miles}){
   this.description = description
   this.imgUrl = imgUrl
   this.miles = miles
-  this.id = generateId()
+  this.id = _id || id
 }
 
 get Template(){
