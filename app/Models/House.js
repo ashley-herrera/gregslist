@@ -1,8 +1,8 @@
 
 
 export default class House{
-    constructor({beds, bathrooms, levels, price, description, imgUrl, year, _id, id}){
-      this.beds = beds
+    constructor({bedrooms, bathrooms, levels, price, description, imgUrl, year, _id, id}){
+      this.bedrooms = bedrooms
       this.bathrooms = bathrooms
       this.levels = levels
       this.price = price
@@ -17,7 +17,8 @@ export default class House{
         <i class="fa fa-trash fa-2x text-danger d-flex align-self-end pointer" onclick="app.houseController.deleteHouse('${this.id}')" aria-hidden="true"></i>
         <img class="card-img-top" src="${this.imgUrl}" alt="">
         <div class="card-body">
-            <h4 class="card-title">${this.beds} - ${this.bathrooms}</h4>
+            <h4 class="card-title">${this.bedrooms} Bedrooms</h4>
+            <h4>${this.bathrooms} Bathrooms</h4>
             <p>${this.description}</p>
             <p>Levels: ${this.levels}</p>
             <p>Price: ${this.price}</p>
