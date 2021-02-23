@@ -43,7 +43,7 @@ export default class HouseController{
 
   deleteHouse(id){
     console.log(id)
-    houseService.deleteCar(id)
+    houseService.deleteHouse(id)
   }
 
 }
