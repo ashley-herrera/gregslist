@@ -31,6 +31,7 @@ export default class HouseController{
       price: parseFloat(form.price.value),
       description: form.description.value,
       imgUrl: form.imgUrl.value,
+      year: form.year.value,
     }
     console.log(rawHouse)
     houseService.createHouse(rawHouse)

@@ -23,6 +23,7 @@ class HouseService{
 async createHouse(rawHouse){
   try{
     const res = await api.post('houses', rawHouse)
+    console.log(res)
     ProxyState.houses = [...ProxyState.houses, new House(res.data)]
   } catch (error) {
     console.error(error)
