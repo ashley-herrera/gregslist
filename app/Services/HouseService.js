@@ -7,13 +7,13 @@ class HouseService{
 
  
     constructor(){
-      console.log("houses service");
       this.getHouses()
     }
   
    async getHouses(){
    try{
      const res = await api.get('houses')
+     console.log(res)
      ProxyState.houses = res.data.map(rawHouseData => new House(rawHouseData))
    } catch (error) {
      console.error(error)
